@@ -77,13 +77,13 @@ public class UIGridRenderer : MaskableGraphic
         if (edge == 0)
             xOffset = 0f;
         else
-            xOffset = lineSize.x * 0.5f;
+            xOffset = lineSize.x;
 
         float size;
         if (edge == 1)
-            size = lineSize.x;
+            size = lineSize.x * 2;
         else
-            size = lineSize.x * 0.5f;
+            size = lineSize.x;
 
         Vector2 cellPos = new Vector2((cellSize.x * x) - offsetPos.x - xOffset, -offsetPos.y);
 
@@ -114,13 +114,13 @@ public class UIGridRenderer : MaskableGraphic
         if (edge == 0)
             yOffset = 0f;
         else
-            yOffset = lineSize.y * 0.5f;
+            yOffset = lineSize.y;
 
         float size;
         if (edge == 1)
-            size = lineSize.y;
+            size = lineSize.y * 2;
         else
-            size = lineSize.y * 0.5f;
+            size = lineSize.y;
 
         Vector2 cellPos = new Vector2(-offsetPos.x, (cellSize.y * y) - offsetPos.y - yOffset);
 
